@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item{
+    margin: 0 5px;
+}
+
+.button{
+    display: none;
+}
+
+@media only screen and (max-width: 475px) {
+    button{
+        display: block;
+    }
+    nav {
+        height: calc(100vh - 30px);
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        display: none;
+    }
+}
+
+.show-nav{
+    display: flex;
+}
